@@ -12,10 +12,8 @@ import java.util.Optional;
 
 public class Registration {
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static Optional<ItemStack> GUARDIAN_SOUP;
     public static void init(){
 
-        GUARDIAN_SOUP = Optional.ofNullable(new ItemStack(ODItems.GUARDIAN_SOUP));
         ODItems.ITEMS();
         ODBlocks.BLOCKS();
         ODTabs.TABS();
